@@ -1,0 +1,734 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+}
+
+.hero-shadow {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: -1;
+}
+
+.top-hero {
+	position: relative;
+	height: 20rem;
+	background-size: cover;
+	z-index: 0;
+}
+
+.top-hero-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-size: 4.5rem;
+	text-transform: uppercase;
+}
+
+.additional-text {
+	font-size: 1.8rem;
+}
+
+a,
+a:hover,
+a:focus a:active {
+	color: inherit;
+	text-decoration: none;
+}
+
+.ul-messages {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.messages {
+	display: inline-block;
+	margin-bottom: 0.5rem;
+	font-size: 1.5rem;
+	text-align: center;
+	font-weight: bold;
+	color: red;
+	list-style-type: none;
+}
+
+/* Nawigation */
+nav {
+	height: 8vh;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.navbar-toggler {
+	font-size: 3rem;
+}
+
+.navbar-brand {
+	font-size: 2.4rem;
+	font-weight: bold;
+	text-transform: none;
+}
+
+/* Header */
+
+header {
+	font-size: 2rem;
+}
+
+.carousel-item {
+	position: relative;
+	height: 40rem;
+	background-position: center;
+	background-size: cover;
+	z-index: 0;
+}
+
+.carousel-img-one {
+	background-image: url('../img/home/carousel-1-small.jpg');
+}
+
+.carousel-img-two {
+	background-image: url('../img/home/carousel-2-small.jpg');
+}
+
+.carousel-img-three {
+	background-image: url('../img/home/carousel-3-small.jpg');
+}
+
+.carousel-img-four {
+	background-image: url('../img/home/carousel-4-small.jpg');
+}
+
+/* Home - boxes*/
+
+.home-boxes {
+	padding: 5rem 0;
+}
+
+.home-box i {
+	font-size: 4rem;
+}
+
+.home-box h3 {
+	font-size: 2.6rem;
+}
+
+/* Home - hero - cars*/
+
+.home-hero-cars {
+	position: relative;
+	height: 35rem;
+	background-image: url('../img/home/home-hero-img.jpg');
+	background-position: center;
+	background-size: cover;
+	z-index: 0;
+}
+
+.service-btn {
+	position: relative;
+	margin: 2rem 1.5rem;
+	padding: 1rem 4rem;
+	background: none;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	color: #fff;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.service-btn::before,
+.service-btn::after {
+	display: block;
+	position: absolute;
+	content: '';
+	transition: 0.5s;
+	z-index: -1;
+}
+
+.service-btn-animation::before {
+	top: -3rem;
+	left: -13rem;
+	height: 160%;
+	width: 10rem;
+	background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+	transform: rotate(20deg);
+}
+
+.service-btn-animation:hover::before {
+	left: 130%;
+}
+
+/* Cars */
+
+.cars-hero {
+	background-image: url('../img/cars/hero-img.jpg');
+	background-position: 0 57%;
+}
+
+.car-btns {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.car-btn {
+	margin: 2rem 1.5rem;
+	padding: 1rem 3rem;
+	border-radius: 1rem;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.cars img {
+	max-width: 100%;
+}
+
+.car-info img {
+	height: 25px;
+}
+
+.car-name {
+	font-size: 3rem;
+}
+
+.car-price {
+	font-size: 2.2rem;
+	font-weight: bold;
+}
+
+.reservation-box {
+	min-width: 65rem;
+}
+
+.summation h3 {
+	font-weight: bold;
+	font-size: 2.1rem;
+}
+
+.summation p {
+	font-size: 1.8rem;
+}
+
+.confirm-res p {
+	font-size: 2.2rem;
+}
+
+.reservation-btn {
+	margin: 0;
+	color: #0d6efd;
+	border: 1px solid #0d6efd;
+}
+
+.reservation-btn:hover {
+	color: #fff;
+	background-color: #0d6efd;
+	transition: 0.3s background-color;
+}
+
+.action-btn {
+	padding: 5px;
+	width: 100%;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.delete-btn {
+	margin-top: 2rem;
+	background-color: rgb(245, 42, 42);
+	border: 1px solid rgb(196, 13, 13);
+	transition: 0.3 background-color;
+}
+
+.delete-btn:hover {
+	background-color: rgb(189, 21, 21);
+}
+
+/* Service */
+
+.service-hero {
+	background-image: url('../img/service/hero-img.jpg');
+	background-position: 0 35%;
+}
+
+.service-hero-box {
+	position: relative;
+	height: 300px;
+	background-size: cover;
+	z-index: 0;
+}
+
+.service-hero-box p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+.box-one {
+	background-image: url('../img/service/box-img-1.jpg');
+}
+
+.box-two {
+	background-image: url('../img/service/box-img-2.jpg');
+}
+
+.box-three {
+	background-image: url('../img/service/box-img-3.jpg');
+}
+
+.box-four {
+	background-image: url('../img/service/box-img-4.jpg');
+}
+
+.box-five {
+	background-image: url('../img/service/box-img-5.jpg');
+}
+
+.box-six {
+	background-image: url('../img/service/box-img-6.jpg');
+}
+
+.card-header {
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+.service-pricing h3 {
+	font-weight: bold;
+}
+
+.service-pricing .btn {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+}
+
+/* FAQ */
+
+.faq-hero {
+	background-image: url('../img/FAQ/hero-img.jpg');
+	background-position: 0 75%;
+}
+
+.question-container {
+	max-width: 1100px;
+	min-height: 90px;
+	padding: 0px 2rem 2rem 2rem;
+	border: 2px solid #0d6efd;
+	border-radius: 20px;
+	border-radius: 40%;
+	border-bottom: none;
+}
+
+.question-container p {
+	font-weight: bold;
+	font-size: 1.8rem;
+	margin: 1rem 0 0 0;
+}
+
+/* Contact */
+
+.contact-hero {
+	background-image: url('../img/contact/hero-img.jpg');
+	background-position: 0 50%;
+}
+
+.contact h2,
+.contact h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.contact h2 {
+	font-size: 2.6rem;
+}
+
+.contact-logo {
+	font-size: 3rem;
+}
+
+.contact input,
+.contact select,
+.contact textarea {
+	font-size: 1.6rem;
+}
+
+.contact label {
+	font-size: 1.8rem;
+}
+
+.contact .btn {
+	padding: 0.3rem 2rem;
+	font-size: 2.2rem;
+}
+
+.contact-map iframe {
+	width: 100%;
+	min-height: 500px;
+}
+
+/* login */
+.login-section {
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+	background-blend-mode: multiply, multiply;
+	min-height: 92vh;
+}
+
+.wrapper {
+	margin: 4rem;
+	min-width: 22rem;
+	background-color: #fff;
+	box-shadow: 0 0 10px #000;
+}
+
+.wrapper form {
+	padding: 2rem;
+	font-size: 1.6rem;
+}
+
+.wrapper h1 {
+	text-align: center;
+	margin-bottom: 1.5rem;
+	font-weight: bold;
+	font-size: 2.3rem;
+}
+
+.form-box {
+	margin-bottom: 1.5rem;
+}
+
+.form-box label {
+	display: inline-block;
+	margin-bottom: 0.5rem;
+}
+
+.form-box input,
+.form-box select {
+	width: 100%;
+	padding: 1rem;
+	font-size: 1.3rem;
+	border-radius: 0.5rem;
+}
+
+.control-button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.uniwersal-btn {
+	display: block;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	align-self: center;
+}
+
+.login-btn {
+	padding: 0.5rem 0.5rem;
+	width: 100%;
+	font-size: 1.2rem;
+}
+
+.lef-login-btn {
+	margin: 0.5rem 0;
+}
+
+/*register */
+
+.registration-section {
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+	background-blend-mode: multiply, multiply;
+}
+
+.form-wrapper {
+	max-width: 80%;
+	margin: 4rem 2rem;
+	background-color: #fff;
+	box-shadow: 0 0 10px #000;
+}
+
+.form-wrapper form {
+	padding: 2rem;
+}
+
+.form-wrapper h1 {
+	font-weight: bold;
+	margin-bottom: 2.5rem;
+	text-align: center;
+	font-size: 3.6rem;
+}
+
+.form-wrapper .form-box input {
+	font-size: 1.8rem;
+}
+
+.form-wrapper .form-box label {
+	font-size: 1.8rem;
+}
+
+.reg-next-btn {
+	padding: 0.5rem;
+	width: 100%;
+	font-size: 1.8rem;
+}
+
+.summation-box h3 {
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.tabel-row {
+	box-sizing: border-box;
+}
+
+.table-row:hover {
+	background-color: rgb(202, 200, 200);
+}
+
+@media (min-width: 375px) {
+	.messages {
+		font-size: 1.6rem;
+	}
+
+	.wrapper {
+		min-width: 30rem;
+	}
+
+	.wrapper form {
+		font-size: 1.8rem;
+		padding: 3rem;
+	}
+
+	.form-box input,
+	.form-box select {
+		font-size: 1.5rem;
+	}
+
+	.login-btn {
+		font-size: 1.5rem;
+	}
+
+	/* registration */
+	.form-wrapper .form-box label {
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 414px) {
+	.messages {
+		font-size: 1.7rem;
+	}
+
+	.wrapper {
+		min-width: 34rem;
+	}
+
+	.wrapper h1 {
+		font-size: 2.6rem;
+	}
+
+	.wrapper form {
+		font-size: 2rem;
+		padding: 4rem;
+	}
+
+	.form-box input,
+	.form-box select {
+		font-size: 1.7rem;
+	}
+
+	.login-btn {
+		font-size: 1.6rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.messages {
+		font-size: 2.1rem;
+	}
+
+	.registration-section {
+		min-height: 93vh;
+	}
+
+	nav {
+		height: 7vh;
+	}
+
+	.wrapper {
+		min-width: 40rem;
+		margin-bottom: 2rem;
+	}
+
+	.wrapper h1 {
+		font-size: 3.6rem;
+	}
+
+	.wrapper form {
+		font-size: 2.1rem;
+	}
+
+	.form-box input,
+	.form-box select {
+		font-size: 1.9rem;
+	}
+
+	.login-btn {
+		font-size: 1.7rem;
+		padding: 0.5rem 2rem;
+	}
+
+	.lef-login-btn {
+		margin: 0.8rem 0.8rem 0.8rem 0;
+	}
+
+	.control-button {
+		flex-direction: row;
+	}
+
+	.question-container p {
+		margin-bottom: 1rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.messages {
+		font-size: 2.3rem;
+	}
+
+	.login-section,
+	.registration-section {
+		position: relative;
+		background-image: url('../img/login/hero-img.png');
+		background-attachment: fixed;
+		background-position: center;
+		z-index: 0;
+		min-height: 93vh;
+	}
+
+	.wrapper {
+		min-width: 46rem;
+	}
+
+	.wrapper form {
+		font-size: 2.3rem;
+	}
+
+	.form-box input,
+	.form-box select {
+		font-size: 2.1rem;
+	}
+
+	.login-btn {
+		font-size: 2rem;
+	}
+
+	/* registration */
+
+	.reg-hero-shadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -1;
+	}
+
+	.form-wrapper {
+		max-width: 60%;
+		margin: 4rem;
+	}
+
+	.form-wrapper form {
+		padding: 4rem;
+	}
+
+	.form-wrapper h1 {
+		margin-bottom: 2.5rem;
+		font-size: 3.6rem;
+	}
+
+	.form-wrapper .form-box input {
+		font-size: 1.8rem;
+	}
+
+	.form-wrapper .form-box label {
+		font-size: 2rem;
+	}
+
+	.reg-next-btn {
+		padding: 0.5rem;
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 1400px) {
+	.carousel-item {
+		height: 600px;
+	}
+
+	.carousel-img-one {
+		background-image: url('../img/home/carousel-1.jpg');
+	}
+
+	.carousel-img-two {
+		background-image: url('../img/home/carousel-2.jpg');
+	}
+
+	.carousel-img-three {
+		background-image: url('../img/home/carousel-3.jpg');
+	}
+
+	.carousel-img-four {
+		background-image: url('../img/home/carousel-4.jpg');
+	}
+
+	.wrapper form {
+		font-size: 2.5rem;
+	}
+
+	.form-box input,
+	.form-box select {
+		font-size: 2.1rem;
+	}
+
+	.login-btn {
+		font-size: 2rem;
+	}
+
+	.lef-login-btn {
+		margin: 1.5rem 1.5rem 1.5rem 0;
+	}
+
+	/* registration */
+	.form-wrapper {
+		max-width: 40%;
+	}
+}
